@@ -1,0 +1,34 @@
+.projectTiles {
+    margin: 50px;
+    position: relative;
+    overflow-y: hidden;
+    border: 2px dashed #630fea;
+}
+.projectTiles:hover {
+    border-style: solid;
+}
+.projectTiles img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.projectOverlay {
+    top: 350px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( 0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100% );
+    opacity: 0.6;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.projectTiles:hover>.projectOverlay {
+        top: 0;
+}

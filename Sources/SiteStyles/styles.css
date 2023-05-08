@@ -1,0 +1,506 @@
+:root {
+
+    --bodyColor: #f3f6fb;
+
+    --bodyLaserDesignColor: linear-gradient(to right, #01b1f8, #7a3ef2, #01b1f8);
+    --buttonColor: #5e17eb;
+    --ballColorOfONE: linear-gradient(#d6d6f3, #d5dff6);
+    --ballColorOfTWO: linear-gradient(#cddcf7, #d0cbef, #cddcf7);
+    --ballColorOfTHREE: linear-gradient(45deg, #cddcf7, #d0cbef, #cddcf7);
+    --slab: linear-gradient(125deg, #cddcf7 20%, #d0cbef 50%, #cddcf7);
+
+    --memberTileColor: linear-gradient(-45deg, #cddcf7 20%, #d0cbef 50%);
+    --membersNameColor: #004aad;
+
+    --footerBackgroundColor: linear-gradient(125deg, #b4bff7, #c7b4f7, #b7bcf7);
+
+    --subHeadingsColor: #646161;
+}
+
+
+
+
+
+/* -------------REUSABLE STYLES------------------ */
+
+.sitePages {
+    width: 80vw;
+    margin-top: 50px;
+    animation: sitePageActive 0.8s forwards;
+}
+
+
+.displayNone {
+
+    display: none !important;
+
+}
+
+.subHeadings {
+    font-size: sans-serif;
+    font-weight: 400;
+    color: var(--subHeadingsColor);
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+a {
+    color: var(--bodyColor);
+    text-decoration: none;
+    padding: 2px;
+}
+
+
+
+/* -------------REUSABLE STYLES------------------ */
+
+
+
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden !important;
+    background-color: var(--bodyColor);
+}
+
+.bodyBackgroundMain {
+
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+.backgroundBalls {
+    z-index: -1;
+    position: relative;
+}
+
+
+
+.backgroundBallMain {
+    position: absolute;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.backgroundBallMainONE {
+
+    background-image: var(--ballColorOfONE);
+    left: -120px;
+    top: -100px;
+    width: 230px;
+    height: 230px;
+    box-shadow: 5px 2px 15px #e9e3ff;
+}
+
+.backgroundBallMainTWO {
+    background-image: var(--ballColorOfTWO);
+    left: -120px;
+    top: 80vh;
+    width: 280px;
+    height: 280px;
+    box-shadow: 5px 2px 15px #e9e3ff;
+
+}
+
+.backgroundBallMainTHREE {
+    background-image: var(--ballColorOfTWO);
+    right: -120px;
+    top: 35vh;
+    width: 280px;
+    height: 280px;
+    box-shadow: 5px 2px 15px #e9e3ff;
+}
+
+.backgroundBallMainFOUR {
+    background-image: var(--ballColorOfTHREE);
+    right: -120px;
+    top: 205vh;
+    width: 280px;
+    height: 280px;
+    box-shadow: 5px 2px 15px #e9e3ff;
+}
+
+
+
+.topLaserLine {
+    background-image: var(--bodyLaserDesignColor);
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottomLaserLine {
+    background-image: var(--bodyLaserDesignColor);
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.overlayBodyMain {
+    z-index: 1;
+    background-color: transparent;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center !important;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+
+
+/* ------------------HEADING----PART---------------------- */
+
+
+
+.headingOfPage {
+    margin: 20px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.headingOfPage div {
+    width: 40vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.logoBox {
+    justify-content: flex-start !important;
+}
+
+
+
+.logoBox img {
+    width: 150px;
+    margin-left: 20px !important;
+}
+
+
+
+
+
+.navigationBox {
+    justify-content: flex-end !important;
+}
+
+
+
+.navigationBox ul {
+    width: 80%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+
+
+.navigationItems {
+    display: grid;
+    place-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.revertBackButton {
+    border: 2px solid #7a3ef2;
+    border-radius: 5px;
+    color: #7a3ef2;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+}
+
+
+
+
+
+.navigationOffToggler,
+.navigationOnToggler {
+    border-radius: 5px !important;
+    color: grey !important;
+    border-color: grey !important;
+}
+
+
+
+.navigationOffToggler {
+    margin: 10px 0 0 10px;
+}
+
+
+
+
+
+.responsiveNavigationBar {
+    position: absolute;
+    top: 50px;
+    left: 80vw !important;
+    z-index: 5;
+}
+
+
+.sideNavBarParent {
+    position: absolute;
+    top: -1vh !important;
+    width: 300px;
+    height: 90vh;
+    border-radius: 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: var(--ballColorOfTHREE);
+    transform: translateX(800px);
+    transition: all 0.51s linear;
+}
+
+.sideNavBarMain {
+    height: 88vh;
+    width: 280px;
+    border-right: 2px solid grey;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 15px !important;
+    background-color: var(--bodyColor);
+}
+
+
+
+.navigationItemsResponsive {
+    height: 80vh !important;
+    width: 260px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+.navigationItemsResponsive ul {
+    height: 60vh !important;
+    width: 260px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+.NavBarActive {
+    transform: translateX(-180px);
+    transition: all 0.45s linear;
+}
+
+
+/* ------------------HEADING----PART---------------------- */
+
+
+
+
+
+
+/* ---------------------FOOTER----PART------------------------- */
+
+
+
+.footerParent {
+    margin: 200px 0px 25px 0px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footerMainBox {
+    opacity: 0.8;
+    color: #fff;
+    width: 90vw;
+    height: 400px;
+    background-image: var(--footerBackgroundColor);
+    border-radius: 20px;
+    position: relative;
+}
+
+
+
+.footerParts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.mainFooter {
+    height: 90%;
+}
+
+.copyrightStatment {
+    height: 10%;
+}
+
+.footerDataSections {
+    height: 100%;
+}
+
+
+
+.ASH-INFO {
+    width: 20%;
+    position: relative;
+}
+
+
+
+.footerASHLogo {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-content: center;
+    align-items: center;
+}
+
+
+
+.footerASHLogo img {
+    width: 100px;
+}
+
+
+
+.additionalDetails {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.footerSeperationLine {
+    position: absolute;
+    right: 30px;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-color: var(--bodyColor);
+}
+
+
+
+.footerLinks {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.importantLinksHeading {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+.importantLinksParentBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.importantLinksBoxes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 10px 20px;
+}
+
+
+
+.importantLinksBoxes header {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+
+
+.copyrightStatment div {
+    padding: 5px 30px;
+    color: #f3f6fb !important;
+}
+
+
+
+.creator a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+.scrollUp {
+    height: 30px;
+    width: 30px;
+    border: 2px solid grey;
+    color: gray;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    background-color: var(--bodyColor);
+}
+
+
+
+/* ---------------------FOOTER----PART------------------------- */

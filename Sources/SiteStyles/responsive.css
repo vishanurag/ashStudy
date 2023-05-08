@@ -1,0 +1,270 @@
+
+@media only screen and (max-width: 1000px) {
+    .techStackBox img {
+        height: 50px;
+        margin: 5px;
+      }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .footerParent {
+        height: 850px;
+    }
+
+    .footerMainBox {
+        height: 800px;
+    
+    }
+
+    .footerParts {
+        flex-direction: column;
+    }
+
+    .mainFooter {
+        height: 80%;
+        flex-direction: column;
+    }
+
+    .ASH-INFO {
+        width: 100%;
+    }
+
+    .footerLinks {
+    
+        row-gap: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .importantLinksParentBox {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+}
+
+
+@media screen and (orientation: portrait) {
+    .heroSection {
+        /* flex-direction: column-reverse; */
+        justify-content: flex-end;
+        height: 20vh !important;
+        width: 100% !important;
+    }
+
+    .heroButtons {
+        display: flex;
+        width: 100% !important;
+        margin-top: -50px !important;
+    }
+    .heroButtons button {
+        width: 100px !important;
+        font-size: 80%;
+    }
+   
+}
+  
+
+
+
+
+@media only screen and ((max-width: 500px) ) {
+
+    .headingOfPage {
+        height: 80px !important;
+    }
+
+    .logoBox img {
+        width: 80px;
+    }
+
+    .heroSection {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 70vh !important;
+        width: 100% !important;
+    }
+
+    .heroSection div {
+        
+        width: 100% !important;
+        
+    }
+
+    .heroTexts {
+        margin-top: 30px !important;
+        height: 65% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .heroImage {
+        height: 35% !important;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .heroImage img{
+        height: 160% !important;
+        
+    }
+    .aboutHeroImage img{
+        height: 130% !important;
+        
+    }
+
+    .heroTexts h3 {
+        font-size: 1.45rem !important;
+        width: 100% !important;
+    }
+    .heroTexts h1 {
+        font-size: 2.3rem !important;
+        width: 100% !important;
+    }
+    .aboutHeroTexts h1 span {
+        font-size: 2rem;
+        color: black;
+    }
+    .heroTexts p {
+        margin-top: 0px !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+
+    .heroButtons {
+        display: flex;
+        width: 100% !important;
+        margin-top: -50px !important;
+    }
+    .heroButtons button {
+        width: 120px !important;
+    }
+
+
+
+    .codingSection {
+        height: 60px !important;
+    }
+    .codingPlatformsIcons img {
+        width: 80% !important;
+    }
+    .subHeadings {
+        font-size: 80%;
+    }
+
+    .diffSections {
+        margin-top: 200px;
+    }
+
+
+    .profilePhotoSection:hover {
+        width: 170px;
+        height: 170px;
+        opacity: 1 !important;
+     }
+
+
+     .aboutMembersTile {
+        flex-direction: column;
+        height: 500px;
+        font-size: 80%;
+     }
+
+     .projectTiles {
+       margin-bottom: -100px;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 370px) {
+    
+    .heroTexts p {
+        
+        font-size: 0.8rem !important;
+    }
+
+    .heroImage img{
+        height: 180% !important;
+        
+    }
+    
+    .heroButtons button {
+        width: 115px !important;
+    }
+    
+    .aboutHeroImage img{
+        height: 120% !important;
+        
+    }
+
+}
+
+
+
+@media only screen and (max-width: 300px) {
+    
+    /* -----------------Home Page------------------ */
+
+    
+    .heroTexts p {
+        font-size: 0.8rem !important;
+    }
+    .heroTexts h1 {
+        font-size: 2rem !important;
+    }
+    .heroTexts h3 {
+        font-size: 1rem !important;
+    }
+    .heroImage img{
+        height: 150% !important; 
+    }
+    .heroButtons button {
+        width: 100px !important;
+        height: 40px !important;
+        font-size: 80%;
+    }
+
+    .techStackBox img {
+        height: 40px;
+        width: auto;
+        margin: 5px;
+      }
+
+
+
+
+    /* -----------------Home Page------------------ */
+
+
+    .aboutMembersTile {
+        height: 600px;
+        
+     }
+
+
+    /* -------------------FOOTER--------------------- */
+
+    .footerParent {
+
+        font-size: 80% !important;
+        height: 750px !important;
+    }
+    .footerMainBox {
+
+        height: 700px !important;
+    }
+
+    /* -------------------FOOTER--------------------- */
+}
+
+
+

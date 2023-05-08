@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.aboutHeroTexts h1 {
+    font-size: 2.5vw;
+}
+
+.aboutHeroTexts h1 span {
+    font-size: 3vw;
+    color: black;
+}
+
+.aboutUsBriefDescription {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 5px;
+}
+.aboutUsBriefDescription svg {
+    height: 90px;
+    margin-top: -50px;
+}
+
+.aboutUsBriefDescription svg {
+    display: inline;
+    color: grey;
+}
+
+.aboutSectionOfTeamMembers div {
+    width: 100%;
+    
+}
+
+
+.aboutMembersTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    opacity: 0.89;
+    margin-bottom: -80px;
+}
+.aboutMembersTileInverse {
+    
+    flex-direction: row-reverse;
+}
+
+.memberImageBox {
+    width: 30% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.memberImageBox img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.aboutSectionMemberInfo {
+    width: inherit;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.aboutSectionMemberInfo div{
+    text-align: center;
+}
+.aboutSectionMemberInfo p{
+    font-family: 'Kalam', cursive;
+    margin-top: 10px;
+    color: rgb(28, 27, 27);
+}
+

@@ -1,0 +1,22 @@
+:root {
+    --bodyLaserDesignColor: linear-gradient(to right, #01b1f8, #7a3ef2, #01b1f8);
+    --bodyLaserDesignColorInverse: linear-gradient(to left, #7a3ef2, #01b1f8, #7a3ef2);
+}
+
+.laserLoadingAnimate {
+    animation: laserLoading 1s ease;
+}
+
+@keyframes laserLoading {
+    0% {
+        background-image: var(--bodyLaserDesignColor);
+    }
+
+    50% {
+        background-image: var(--bodyLaserDesignColorInverse);
+
+    }
+    100% {
+        background-image: var(--bodyLaserDesignColor);
+    }
+}
