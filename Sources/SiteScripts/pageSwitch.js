@@ -43,3 +43,10 @@ function pageChange(pageValue) {
         toggleNavBar(0);
     }
 }
+
+
+// Added this function for scrolling brom bottom to top......
+function ScrollToTop() {
+    laserLoading.scrollIntoView({behavior: "smooth"});
+}
+// Added this function for scrolling brom bottom to top......

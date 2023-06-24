@@ -150,9 +150,9 @@
     
     </footer>
     
-    <a href="" class="NewVersionReloadButton">
+    <a href="./" class="NewVersionReloadButton">
     
-        <button class="NewVersionButton" style="padding: 15px; color: blueviolet; border: 2px solid blueviolet; ">
+        <button class="NewVersionButton" style="padding: 15px; color: blueviolet; border: 2px solid blueviolet; border-radius: 5px; position: fixed;">
             
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
